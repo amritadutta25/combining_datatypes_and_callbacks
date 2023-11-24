@@ -38,3 +38,39 @@ console.log(calculate(1, 2, add))
 console.log(calculate(1, 2, subtract))
 console.log(calculate(1, 2, multiply))
 console.log(calculate(1, 2, divide))
+
+
+//================================
+//Function definition placement
+//================================
+
+//Good practice is to have function definitions before the functions are called
+const bar = () => {
+    console.log('bar here');
+}
+
+const foo = () => {
+    console.log('foo here');
+}
+
+bar();
+foo();
+
+//==================
+//Error Reading
+//==================
+
+// foo();
+
+// const foo ()=>{
+//     console.log('hi');
+// }
+
+//This produces 'SyntaxError: Missing initializer in const declaration'. Variable foo is a 'const' variable which means its value cannot be changed. So while declaring a const variable you have to initiliaze it with a value. 
+//Here, a '=' (equal to) operator is missing, hence, it throws a syntax error saying a const variable has not been initialized with a value during declaration.
+// Corrected code:
+
+// const foo = ()=>{
+//     console.log('hi');
+// }
+// foo();
