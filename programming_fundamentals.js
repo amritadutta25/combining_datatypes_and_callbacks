@@ -46,7 +46,7 @@
 //=================
 // Comment each line of this code and describe what it is doing. Feel free to run this code and add console.logs to help you figure it out:
 
-// This is a function to calculate the sum of even numbers in a Fibonnaci series starting from 1 to the number(limit) passed as an argument to the function. Fibonnaci series is a series of numbers where the current number is the sum of previous two numbers.
+// This is a function to calculate the sum of even numbers in a Fibonnaci series starting from 1 to the number(limit) passed as an argument to the function. Fibonnaci series is a special series of numbers where the current number is the sum of previous two numbers.
 
 // function f taking a parameter called l
 const f = l => {
@@ -94,11 +94,11 @@ console.log(f2(55))
 // In keeping with one of our programming principals (write code for the maintainer): What would have been a more semantic name for this function (hint: this is a problem we had for either lab or hw and is considered a classic ) - are there any other variable names or things that would make this code easier to read and understand?
 
 //Function name could have been 'fibonacciEvenSum' - for finding sum of even numbers in a Fibonacci series.
-// f2 function has variables names which is readbale and easily understood for the context of the code
+// f2 function has variables names which is readable and easily understood for the context of the code
 
 // If you started a new job and your project was to expand the functionality of this function by allowing a second argument and then based on that second argument, returning the sum of even or odd numbers, which code would you rather start working with f or f2?
 
-//f2 because it has better variable names which makes it easy to understand the functionality and it more readable.
+//f2 because it has better variable names which makes it easy to understand the functionality and is more readable.
 
 // Finally, the 'shorter' code style doesn't use semi-colons, except for the fourth line. Remove this semi-colon! Run the code, is this semi-colon necessary?
 
