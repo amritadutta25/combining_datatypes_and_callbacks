@@ -80,3 +80,29 @@ function powerButton()
 const optionsFunc = powerButton() //calls the function powerButton that returns the function 'options'
 optionsFunc()  // invoke the function options
 
+
+//============================
+//Model a Vending Machine
+//============================
+
+//a vending machine is an object
+const vendingMachine = {
+
+    //it has an array of snacks (make 3 snacks)
+    snacks: [
+        //snacks are objects that have a name and a price
+        {name:'chips', price: 10},
+        {name:'chocolate', price: 6},
+        {name: 'cookies', price: 7}
+    ],
+    //a vending machine has a function vend that allows user to enter the array position (a number) of the snack and then that snack will be returned
+    vend: function(snackPos) {
+        return this.snacks[snackPos]  // accessing snacks array using 'this' keyword
+    }
+
+}
+//Be able to call vendingMachine.vend() with a valid integer to return a snack
+console.log(vendingMachine.vend(0))
+console.log(vendingMachine.vend(1))
+console.log(vendingMachine.vend(2))
+
