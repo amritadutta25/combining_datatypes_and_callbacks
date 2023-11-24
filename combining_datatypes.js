@@ -28,6 +28,7 @@ console.log(receipt[0].name)
 
 const apartmentBuilding = [
     ['Amanda', 'Brandon', 'Catherine'],
+    ['Fiona', 'Greg', 'Hailey']
 ]
 
 console.log(apartmentBuilding[0][0])
